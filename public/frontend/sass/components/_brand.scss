@@ -1,0 +1,43 @@
+/* 3.14 - Brand Section - start
+================================================== */
+.brand_carousel {
+	padding: 50px 0;
+	background-color: #f9f9f9;
+}
+.product_brand_logo {
+	height: 88px;
+	display: block;
+	overflow: hidden;
+	padding: 0px 20px;
+	position: relative;
+	img {
+		top: 50%;
+		left: 50%;
+		max-width: 170px;
+		position: absolute;
+		transition: $default_transition;
+		transform: translate(-50%, -50%);
+		&:nth-child(1) {}
+		&:nth-child(2) {
+			opacity: 0;
+			margin-top: 20px;
+			filter: blur(10px);
+		}
+	}
+	&:hover {
+		img {
+			&:nth-child(1) {
+				opacity: 0;
+				margin-top: -20px;
+				filter: blur(10px);
+			}
+			&:nth-child(2) {
+				opacity: 1;
+				margin-top: 0;
+				filter: blur(0px);
+			}
+		}
+	}
+}
+/* 3.14 - Brand Section - end
+================================================== */

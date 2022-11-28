@@ -1,0 +1,54 @@
+// background image mixin
+@mixin bg_image_property($bg_repeat: no-repeat, $bg_size: cover, $bg_position: center center) {
+	background-size: $bg_size;
+	background-repeat: $bg_repeat;
+	background-position: $bg_position;
+}
+
+@mixin widther( $length ) {
+	@media screen and (min-width: $length)  {
+		@content;
+	}
+}
+
+@mixin media-query( $length ) {
+	@media (max-width: $length) {
+		@content;
+	}
+}
+@mixin translatingX( $amount: -50% ) {
+	-webkit-transform: translateX($amount);
+	-moz-transform: translateX($amount);
+	-o-transform: translateX($amount);
+	-ms-transform: translateX($amount);
+	transform: translateX($amount);
+}
+
+
+@mixin translatingY( $amount: -50% ) {
+	-webkit-transform: translateY($amount);
+	-moz-transform: translateY($amount);
+	-o-transform: translateY($amount);
+	-ms-transform: translateY($amount);
+	transform: translateY($amount);
+}
+
+@mixin center-by-translating() {
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+@mixin transition-time( $time: 0.5s, $prop: all ) {
+	-webkit-transition: $prop $time;
+	-moz-transition: $prop $time;
+	-o-transition: $prop $time;
+	-ms-transition: $prop $time;
+	transition: $prop $time;
+}
+@mixin background-style( $path, $position, $bg-size, $repeat, $attachment ) {
+	background: url($path) $position/$bg-size $repeat $attachment;
+}
+

@@ -1,0 +1,53 @@
+/* 3.11 - Service Section - start
+================================================== */
+.service_section {
+	&.bg_gray {
+		background-color: #fbfbfb;
+	}
+}
+
+.service_boxed {
+	color: #ffffff;
+	text-align: center;
+	border-radius: 10px;
+	padding: 79px 30px 75px;
+	background-color: $default_blue;
+	transition: $default_transition;
+	&:hover {
+		background-color: $default_orange;
+	}
+
+	.item_icon {
+		z-index: 1;
+		position: relative;
+		margin-bottom: 30px;
+		i {
+			&:first-child {
+				font-size: 50px;
+			}
+			&:last-child {
+				top: 50%;
+				left: 50%;
+				z-index: -1;
+				font-size: 95px;
+				position: absolute;
+				color: rgba(255, 255, 255, 0.08);
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+
+	.item_title {
+		color: #ffffff;
+		line-height: 1;
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+
+	p {
+		color: #dbdbdb;
+		margin-bottom: 0;
+	}
+}
+/* 3.11 - Service Section - end
+================================================== */

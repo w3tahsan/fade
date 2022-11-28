@@ -1,0 +1,53 @@
+/* 2.15 - Pricing Range - start
+================================================== */
+.price-range-area {
+  padding-top: 7px;
+}
+.price-range-area .slider-range {
+  height: 6px;
+  border: none;
+  border-radius: 45px;
+  background-color: #eaeaea;
+}
+.price-range-area .ui-slider-range {
+  border: none;
+  border-radius: 45px;
+  background-color: $theme-color;
+}
+.price-range-area .ui-state-default {
+  top: -7px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 100%;
+  border: 6px solid #ffffff;
+  background-color: $theme-color;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.price-range-area .price-text {
+	margin-bottom: 15px;
+}
+.price-range-area .price-text span {
+  float: left;
+  margin-right: 5px;
+}
+.price-range-area .price-text input {
+  border: none;
+  display: inline-block;
+  background-color: transparent;
+}
+.price-range-area .price_filter_btn {
+  height: 40px;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 4px;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  box-shadow: 0px 10px 30px 0px rgba(135, 153, 163, 0.5);
+}
+/* 2.15 - Pricing Range - end
+================================================== */

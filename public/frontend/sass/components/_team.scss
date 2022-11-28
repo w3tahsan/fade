@@ -1,0 +1,34 @@
+/* 3.12 - Team Page - start
+================================================== */
+.team_section_title {
+	padding-right: 40px;
+	.title_text {
+		line-height: 1;
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+}
+
+.team_item {
+	padding-top: 50px;
+	text-align: center;
+	.team_image {
+		width: 270px;
+		height: 270px;
+		overflow: hidden;
+		border-radius: 100%;
+		margin: 0 auto 15px;
+	}
+
+	.team_member_name {
+		line-height: 1;
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	.team_member_title {
+		display: block;
+		line-height: 1;
+	}
+}
+/* 3.12 - Team Page - end
+================================================== */

@@ -1,0 +1,109 @@
+/* 1.2 Template Global Reset - start
+================================================== */
+body {
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.65;
+	font-style: normal;
+	color: $default_color;
+	font-family: $body_font;
+	text-rendering: optimizelegibility;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+.body_wrap {
+	overflow: hidden;
+	position: relative;
+}
+
+::selection {
+	color: #ffffff;
+	background-color: #000000;
+}
+::-moz-selection {
+	color: #ffffff;
+	background-color: #000000;
+}
+
+iframe {
+	border: none;
+}
+
+a:focus,
+a:active,
+input,
+input:hover,
+input:focus,
+input:active,
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:active {
+	outline: none;
+}
+
+img:not([draggable]),
+embed,
+object,
+video {
+	height: auto;
+	max-width: 100%;
+}
+img {
+	border: none;
+	height: auto;
+	max-width: 100%;
+	user-select: none;
+	vertical-align: middle;
+}
+
+a {
+	outline: 0;
+	display: inline-block;
+	text-decoration: none;
+	transition: $default_transition;
+	&:active,
+	&:focus,
+	&:hover,
+	&:visited {
+		outline: 0;
+		text-decoration: none;
+	}
+}
+
+button {
+	padding: 0px;
+	border: none;
+	outline: none;
+	background: none;
+	display: inline-block;
+	transition: $default_transition;
+	&:focus {
+		outline: none;
+	}
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 500;
+	color: $default_black;
+	font-family: $heading_font;
+}
+
+hr {
+	opacity: 1;
+	height: 2px;
+	margin: 25px 0;
+	border-top: 1px solid #f5f5f5;
+}
+
+.sr-only,
+.hidden {
+    display: none !important;
+    opacity: 0;
+    visibility: hidden;
+}
+/* 1.2 Template Global Reset - end
+================================================== */

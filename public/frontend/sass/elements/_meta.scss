@@ -1,0 +1,54 @@
+/* 2.14 - Post Meta - start
+================================================== */
+.post_meta {
+  >li {
+    position: relative;
+    margin-bottom: 5px;
+    &:not(:last-child) {
+      margin-right: 7px;
+      padding-right: 7px;
+    }
+    &:after {
+      top: 50%;
+      right: -4px;
+      content: '/';
+      position: absolute;
+      transform: translateY(-50%);
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  a {
+    display: block;
+    color: $default_color;
+    &:hover {
+      color: $default_red;
+    }
+  }
+
+  .category_list {
+    >li {
+      position: relative;
+      &:not(:last-child) {
+        margin-right: 5px;
+        padding-right: 2px;
+      }
+      &:after {
+        right: 0;
+        bottom: 0;
+        content: ',';
+        position: absolute;
+      }
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+/* 2.14 - Post Meta - end
+================================================== */

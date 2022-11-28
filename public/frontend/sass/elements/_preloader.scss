@@ -1,0 +1,14 @@
+/* 2.8 - Preloader Style - start
+================================================== */
+#preloader {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  position: fixed;
+  overflow: visible;
+  background: #ffffff url('../images/preloader.svg') no-repeat center center;
+}
+/* 2.8 - Preloader Style - end
+================================================== */

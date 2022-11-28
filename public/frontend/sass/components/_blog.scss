@@ -1,0 +1,301 @@
+/* 3.16 - Blog Page - start
+================================================== */
+
+/* recent post item - start */
+.recent_posts_list {
+	>li {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.recent_post_item {
+	display: flex;
+	align-items: center;
+	.item_image {
+		flex: 0 0 70px;
+		display: block;
+		overflow: hidden;
+		border-radius: 6px;
+		margin-right: 20px;
+		img {
+			transition: $default_transition;
+		}
+	}
+	.item_title {
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 2px;
+		font-family: 'Lato', sans-serif;
+		>a {
+			color: $default_black;
+			&:hover {
+				color: $theme-color;
+			}
+		}
+	}
+
+	&:hover {
+		.item_image {
+			img {
+				transform: scale(1.08);
+			}
+		}
+		.item_title {
+			>a {
+				text-decoration: underline;
+			} 
+		}
+	}
+}
+/* recent post item - end */
+
+/* blog standard small - start */
+.blog_carousel_wrap {
+	.title_wrap {
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+		justify-content: space-between;
+		.area_title {
+			font-size: 22px;
+			margin-bottom: 0;
+		}
+		.carousel_nav {
+			button {
+				width: auto;
+				height: auto;
+				line-height: 1;
+				border-radius: 0;
+				color: $default_black;
+				background-color: transparent;
+				&:hover {
+					color: $default_red;
+				}
+				&:not(:last-child) {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}
+
+.blog_standard_small {
+	padding: 10px;
+	border-radius: 3px;
+	border: 1px solid #eaeaea;
+
+	.item_image {
+		display: block;
+		overflow: hidden;
+		position: relative;
+		img {
+			width: 100%;
+			display: block;
+			transition: $default_transition;
+		}
+	}
+
+	.item_content {
+		padding: 10px;
+	}
+
+	.item_title {
+		font-size: 14px;
+		font-weight: 700;
+		margin-bottom: 15px;
+		a {
+			color: $default_black;
+		}
+	}
+
+	&:hover {
+		.item_image {
+			img {
+				transform: scale(1.08);
+			}
+		}
+
+		.item_title {
+			a {
+				color: $default_red;
+			}
+		}
+	}
+}
+/* blog standard small - end */
+
+/* blog standard - start */
+.bolg_standard {
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #eeeeee;
+
+	.item_image {
+		display: block;
+		overflow: hidden;
+		border-radius: 6px;
+		margin-bottom: 30px;
+		img {
+			width: 100%;
+			display: block;
+			transition: $default_transition;
+		}
+	}
+
+	.post_meta {
+		margin-bottom: 10px;
+	}
+
+	.item_title {
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 20px;
+		font-family: 'Lato', sans-serif;
+		a {
+			color: $default_black;
+			&:hover {
+				color: $theme-color;
+			}
+		}
+	}
+
+	p {
+		margin-bottom: 30px;
+	}
+
+	.btn {
+		padding: 12px 20px 11px;
+	}
+
+	&:hover {
+		.item_image {
+			img {
+				transform: scale(1.08);
+			}
+		}
+
+		.item_title {
+			a {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+/* blog standard - end */
+
+/* blog quote - start */
+.bolg_quote {
+	min-height: 320px;
+	border-radius: 6px;
+	position: relative;
+	margin-bottom: 50px;
+	padding: 50px 50px 100px;
+	.icon {
+		right: 50px;
+		bottom: 40px;
+		line-height: 1;
+		font-size: 48px;
+		position: absolute;
+	}
+	.item_title {
+		font-size: 24px;
+		margin-bottom: 25px;
+	}
+	.post_admin {
+		display: block;
+		line-height: 1;
+	}
+	.global_link {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+		z-index: 10;
+		position: absolute;
+		&:before {
+			top: 15px;
+			left: 15px;
+			right: 15px;
+			bottom: 15px;
+			content: '';
+			position: absolute;
+			border-radius: 6px;
+			border: 2px solid #ffffff;
+		}
+	}
+	&:hover {
+		.global_link {
+			opacity: 1;
+		}
+	}
+
+	&.bg_default_blue {
+		.icon {
+			color: $theme-color;
+		}
+	}
+}
+/* blog quote - end */
+
+/* blog split layout - start */
+.blog_split_layout {
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #eeeeee;
+
+	.item_image {
+		display: block;
+		flex: 0 0 370px;
+		overflow: hidden;
+		border-radius: 6px;
+		img {
+			width: 100%;
+			display: block;
+			transition: $default_transition;
+		}
+	}
+
+	.item_content {
+		padding-left: 30px;
+	}
+
+	.item_title {
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 15px;
+		font-family: 'Lato', sans-serif;
+		a {
+			color: $default_black;
+			&:hover {
+				color: $theme-color;
+			}
+		}
+	}
+
+	.btn {
+		padding: 12px 20px 11px;
+	}
+
+	&:hover {
+		.item_image {
+			img {
+				transform: scale(1.08);
+			}
+		}
+
+		.item_title {
+			a {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+/* blog split layout - end */
+
+/* 3.16 - Blog Page - end
+================================================== */

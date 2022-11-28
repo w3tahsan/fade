@@ -1,0 +1,16 @@
+/* 2.11 - Rating Star - start
+================================================== */
+.rating_star {
+	li {
+		color: #71737a;
+		font-size: 12px;
+		&:not(:last-child) {
+			margin-right: 2px;
+		}
+		&.active {
+			color: $default_orange;
+		}
+	}
+}
+/* 2.11 - Rating Star - end
+================================================== */

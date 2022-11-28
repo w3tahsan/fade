@@ -1,0 +1,62 @@
+/* 2.7 - Carousel Settings - start
+================================================== */
+.slick-dots {
+	li {
+		display: inline-block;
+		&:not(:last-child) {
+			margin: 0 8px 0 0;
+		}
+		button {
+			opacity: 1;
+			width: 14px;
+			height: 14px;
+			display: block;
+			border-radius: 100%;
+			border: 1px solid #d5d5d5;
+			background-color: #d5d5d5;
+			transition: $default_transition;
+		}
+		&:hover,
+		&.slick-active {
+			button {
+				opacity: 1;
+				background-color: #ffffff;
+				border-color: $default_orange;
+			}
+		}
+	}
+}
+
+.carousel_nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	button {
+		width: 35px;
+		height: 35px;
+		color: #2f3034;
+		font-size: 24px;
+		line-height: 37px;
+		text-align: center;
+		border-radius: 3px;
+		background-color: #f4f4f4;
+		&:hover {
+			color: #ffffff;
+			background-color: $theme-color;
+		}
+		&:not(:last-child) {
+			margin-right: 5px;
+		}
+	}
+}
+
+.arrows_topright {
+	position: relative;
+	.carousel_nav {
+		right: 0;
+		top: -50px;
+		position: absolute;
+	}
+}
+/* 2.7 - Carousel Settings - end
+================================================== */

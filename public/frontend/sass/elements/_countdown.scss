@@ -1,0 +1,52 @@
+/* 2.13 - Countdown Style - start
+================================================== */
+.countdown_timer {
+	>li {
+		position: relative;
+		&:not(:last-child) {
+			margin-right: 7px;
+			padding-right: 7px;
+		}
+		&:after {
+			top: 5px;
+			right: -2px;
+			content: ':';
+			position: absolute;
+			color: $default_black;
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+	strong,
+	span {
+		display: block;
+		line-height: 1;
+	}
+
+	strong {
+		min-width: 50px;
+		font-size: 16px;
+		font-weight: 400;
+		padding: 8px 10px;
+		border-radius: 3px;
+		margin-bottom: 10px;
+		color: $default_black;
+		border: 2px solid $theme-color;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.countdown_timer {
+		strong {
+			min-width: 40px;
+			font-size: 14px;
+			padding: 5px 8px;
+			margin-bottom: 8px;
+		}
+	}
+}
+/* 2.13 - Countdown Style - end
+================================================== */

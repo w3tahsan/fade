@@ -1,0 +1,238 @@
+/* 3.8 - Banner Style - start
+================================================== */
+
+/* promotion banner wrap - start */
+.promotion_banner_wrap {
+	margin-top: -30px;
+}
+/* promotion banner wrap - start */
+
+/* promotion banner - start */
+.promotion_banner {
+	display: flex;
+	padding: 40px;
+	margin-top: 30px;
+	min-height: 270px;
+	align-items: center;
+	background-color: #f3f3f3;
+	justify-content: space-between;
+	&.bg_gray {
+		background-color: #e9e9e9;
+	}
+	.item_image {
+		order: 1;
+		min-height: 200px;
+		margin-left: -40px;
+		align-items: center;
+		display: inline-flex;
+		justify-content: center;
+		img {
+			max-height: 190px;
+			transition: $default_transition;
+		}
+	}
+	&:hover {
+		.item_image {
+			img {
+				transform: scale(1.08);
+			}
+		}
+	}
+	.item_content {
+		z-index: 1;
+		max-width: 300px;
+		position: relative;
+		padding-right: 60px;
+	}
+	.item_title {
+		line-height: 1;
+		font-size: 30px;
+		font-weight: 500;
+		margin-bottom: 0.5em;
+		.yellow_text {
+			display: block;
+			color: $theme-color;
+		}
+	}
+	p {
+		font-size: 15px;
+		color: #646060;
+		margin-bottom: 1.5em;
+	}
+
+}
+/* promotion banner - end */
+
+/* promotion banner 2 - start */
+.promotion_banner2 {
+	z-index: 1;
+	display: flex;
+	overflow: hidden;
+	position: relative;
+	padding: 63px 60px;
+	margin-bottom: 10px;
+	align-items: center;
+	background-color: #f6f6f6;
+	border: 1px solid #d7e1e6;
+
+	.global_link {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		opacity: 0;
+		position: absolute;
+		border: 2px solid $theme-color;
+	}
+
+	.item_image {
+		top: -40px;
+		right: -20px;
+		z-index: -1;
+		max-width: 460px;
+		position: absolute;
+		img {
+			transition: $default_transition;
+		}
+	}
+
+	.item_subtitle {
+		color: #71737a;
+		font-size: 14px;
+		font-weight: 400;
+		margin-bottom: 15px;
+		span {
+			color: #f7a392;
+		}
+	}
+
+	.item_title {
+		line-height: 1;
+		font-size: 24px;
+		margin-bottom: 25px;
+	}
+
+	.item_price {
+		font-size: 18px;
+		font-weight: 700;
+		color: $theme-color;
+		small {
+			font-size: 14px;
+			font-weight: 400;
+			color: $default_color;
+		}
+	}
+
+	&:hover {
+		.global_link {
+			top: 10px;
+			left: 10px;
+			right: 10px;
+			bottom: 10px;
+			opacity: 1;
+		}
+		
+		.item_image {
+			img {
+				transform: scale(1.08);
+			}
+		}
+	}
+}
+/* promotion banner 2 - end */
+
+/* promotion banner 3 - start */
+.promotion_banner3 {
+	padding: 30px;
+	margin-top: 30px;
+	overflow: hidden;
+	position: relative;
+	background-color: #f3f3f3;
+
+	.global_link {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		opacity: 0;
+		position: absolute;
+		border: 2px solid $theme-color;
+	}
+
+	&:hover {
+		.global_link {
+			top: 10px;
+			left: 10px;
+			right: 10px;
+			bottom: 10px;
+			opacity: 1;
+		}
+	}
+
+	.item_content {
+		margin-bottom: 23px;
+	}
+
+	.item_subtitle {
+		font-size: 16px;
+		margin-bottom: 7px;
+		color: $theme-color;
+	}
+
+	.item_title {
+		font-size: 24px;
+		margin-bottom: 0;
+	}
+
+	.item_badge {
+		top: 60%;
+		left: 80px;
+		width: 80px;
+		height: 80px;
+		display: flex;
+		color: #ffffff;
+		position: absolute;
+		align-items: center;
+		border-radius: 100%;
+		justify-content: center;
+		background-color: #252525;
+		span,strong {
+			width: 100%;
+			display: block;
+			line-height: 1;
+			font-size: 14px;
+		}
+	}
+
+	.item_image {
+		height: 145px;
+		display: flex;
+		align-items: flex-end;
+		img {
+			max-height: 100%;
+		}
+	}
+
+	&.big_item {
+		padding: 60px;
+		.item_content {
+			margin-bottom: 100px;
+		}
+		.item_image {
+			height: 310px;
+			img {
+				margin-right: -90px;
+				margin-bottom: -30px;
+			}
+		}
+		.item_title {
+			font-size: 30px;
+		}
+	}
+}
+/* promotion banner 3 - end */
+
+/* 3.8 - Banner Style - end
+================================================== */

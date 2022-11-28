@@ -1,0 +1,29 @@
+/* 2.3 - Default Space - start
+================================================== */
+
+/* container width - start */
+.container {
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	.row {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.col {
+		flex: unset;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+/* container width - end */
+
+/* section top & bottom space - start */
+.section_space {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+/* section top & bottom space - end */
+
+/* 2.3 - Default Space - end
+================================================== */

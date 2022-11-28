@@ -1,0 +1,39 @@
+/* 3.9 - Policy Section - start
+================================================== */
+
+.policy_section {
+	margin-top: 50px;
+}
+
+.policy-wrap {
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid #ededed;
+	flex-wrap: wrap;
+
+}
+.policy_item {
+	display: flex;
+	padding: 32px 30px;
+	align-items: center;
+	.item_icon {
+		font-size: 36px;
+		margin-right: 20px;
+		color: $theme-color;
+	}
+	.item_title {
+		line-height: 1;
+		font-size: 20px;
+		font-weight: 500;
+		margin-bottom: 10px;
+	}
+	p {
+		line-height: 1;
+		margin-bottom: 0;
+	}
+}
+
+/* 3.9 - Policy Section - end
+================================================== */

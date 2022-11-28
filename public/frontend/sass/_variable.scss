@@ -1,0 +1,20 @@
+// font family
+$body_font: 'Aktiv grotesk', sans-serif;
+$heading_font: 'Aktiv grotesk', sans-serif;
+$secondary_font: 'Aktiv grotesk', sans-serif;
+
+// default color set
+$default_red: #cd1212;
+$default_blue: #051d43;
+$default_color: #052840;
+$default_black: #252525;
+$theme-color: #f02757;
+$theme-color2: #fbbe32;
+$default_orange: #e23e1d;
+$heading-color: $default_black;
+$text-color: $default_color;
+$white: #fff;
+$black: #000;
+
+// default transition
+$default_transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);

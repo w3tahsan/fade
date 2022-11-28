@@ -1,0 +1,134 @@
+/* table of content - start
+================================================== */
+/* 
+* Project Name   :  Stowaa -  Ecommerce HTML Template
+* File           :  CSS Base
+* Version        :  1.0.0
+* Last change    :  16 Dec 2021
+* Author         :  WP Studio
+* Developer		 :  Avi Aminov
+
+==================================================
+
+1 - Template Global Settings
+	1.1 - Template Fonts
+	1.2 - Template Global Reset
+
+2 - Template Elements
+	2.1 Back To Top Button
+	2.2 Default Color
+	2.3 Default Space
+	2.4 Button Style
+	2.5 Order & Unorder List
+	2.6 Section Title
+	2.7 Carousel Settings
+	2.8 Preloader Style
+	2.9 Form Style
+	2.10 Social Links Style
+	2.11 Rating Star
+	2.12 Pagination Nav
+	2.13 Countdown Style
+	2.14 Post Meta
+	2.15 Pricing Range
+
+3 - Template Components
+	3.1 Header Section
+	3.2 Footer Section
+	3.3 Breadcrumb Section
+	3.4 Sidebar Section
+	3.5 Slider Section
+	3.6 Category Style
+	3.7 Deal Products
+	3.8 Banner Style
+	3.9 Policy Section
+	3.10 About Page
+	3.11 Service Section
+	3.12 Team Page
+	3.13 Newsletter Section
+	3.14 Brand Section
+	3.15 Shop Page
+	3.16 Blog Page
+	3.17 All Details Pages
+	3.18 Order Page
+	3.19 Contact Page
+	3.20 Account Page
+	3.21 Compare Page
+	3.22 Cart Page
+	3.23 Checkout Page
+	3.24 Call To Action Section
+	3.25 Register Form
+	3.26 Error Page
+
+4 - Responsive For Mobile & Tablet Devices
+
+*/
+/* table of content - end
+================================================== */
+
+// template global settings
+@import 'variable';
+@import 'fonts';
+@import 'mixin';
+@import 'reset';
+
+// template elements
+@import 'elements/backtotop';
+@import 'elements/color';
+@import 'elements/space';
+@import 'elements/button';
+@import 'elements/list';
+@import 'elements/title';
+@import 'elements/carousel';
+@import 'elements/preloader';
+@import 'elements/form';
+@import 'elements/social';
+@import 'elements/rating';
+@import 'elements/pagination';
+@import 'elements/countdown';
+@import 'elements/meta';
+@import 'elements/range';
+
+// template components
+@import 'components/header';
+@import 'components/footer';
+@import 'components/breadcrumb';
+@import 'components/sidebar';
+@import 'components/slider';
+@import 'components/category';
+@import 'components/deals';
+@import 'components/banner';
+@import 'components/policy';
+@import 'components/about';
+@import 'components/service';
+@import 'components/team';
+@import 'components/newsletter';
+@import 'components/brand';
+@import 'components/shop';
+@import 'components/blog';
+@import 'components/details';
+@import 'components/order';
+@import 'components/contact';
+@import 'components/account';
+@import 'components/compare';
+@import 'components/cart';
+@import 'components/checkout';
+@import 'components/calltoaction';
+@import 'components/register';
+@import 'components/error';
+@import 'components/product-area';
+@import 'components/product-sidebar';
+@import 'components/blog-sidebar';
+@import 'components/pagination';
+
+
+// pages
+@import 'pages/home';
+@import 'pages/home-s2';
+@import 'pages/blog';
+@import 'pages/blog-single';
+@import 'pages/error-404';
+@import 'pages/checkout';
+
+
+// template responsive
+@import 'responsive';

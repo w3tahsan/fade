@@ -1,0 +1,28 @@
+/* 3.26 - Error Page - start
+================================================== */
+.error_content {
+	text-align: center;
+	margin-bottom: 100px;
+	h1 {
+		line-height: 1;
+		font-size: 250px;
+		color: $default_blue;
+		span {
+			color: $theme-color;
+		}
+	}
+	h2 {
+		color: #242424;
+		font-size: 18px;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+	}
+}
+
+.error_search_form {
+	padding: 85px 100px;
+	border-radius: 10px;
+	background-color: #f7f7f7;
+}
+/* 3.26 - Error Page - end
+================================================== */

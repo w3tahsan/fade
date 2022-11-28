@@ -1,0 +1,38 @@
+/* 2.5 - Order & Unorder List - start
+================================================== */
+.ul_li,
+.ul_li_right,
+.ul_li_center {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  >li {
+    float: left;
+    list-style: none;
+    display: inline-block;
+  }
+}
+
+.ul_li {
+  justify-content: flex-start;
+}
+.ul_li_center {
+  justify-content: center;
+}
+.ul_li_right {
+  justify-content: flex-end;
+}
+
+.ul_li_block {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  >li {
+    display: block;
+    list-style: none;
+  }
+}
+/* 2.5 - Order & Unorder List - end
+================================================== */

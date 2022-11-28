@@ -1,0 +1,52 @@
+/* 2.12 - Pagination Nav - start
+================================================== */
+.pagination_wrap {
+  padding-top: 20px;
+}
+.pagination_nav {
+  margin: -3px;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 0;
+
+
+  li {
+    padding: 3px;
+    float: left;
+  }
+  a {
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    font-size: 14px;
+    border-radius: 0;
+    align-items: center;
+    color: $default_black;
+    justify-content: center;
+    border: 1px solid #eeeeee;
+    font-weight: 500;
+  }
+  li {
+    &:hover,
+    &.active {
+      a {
+        color: #ffffff;
+        border-color: $default_black;
+        background-color: $default_black;
+      }
+    }
+
+    &.prev_btn,
+    &.next_btn {
+      &:hover {
+        a {
+          color: #ffffff;
+          border-color: $theme-color;
+          background-color: $theme-color;
+        }
+      }
+    }
+  }
+}
+/* 2.12 - Pagination Nav - end
+================================================== */

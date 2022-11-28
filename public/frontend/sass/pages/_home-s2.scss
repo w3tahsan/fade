@@ -1,0 +1,123 @@
+.best-selling-products-s2 {
+	 .grid {
+        background: white;
+        width: calc(25% - 30px);
+        float: left;
+        margin: 0 15px 45px;
+        padding: 25px;
+        box-shadow: 0 4px 0 #ebebeb;
+        border: 1px solid #f3f3f3;
+        border-radius: 4px;
+        position: relative;
+        top: 0;
+        @include transition-time(0.2s);
+
+        
+        @include media-query(991px) {
+            width: calc(33.33% - 15px);
+            margin: 0 7.5px 15px;
+        }
+        
+        @include media-query(767px) {
+            width: calc(50% - 15px);
+            margin: 0 7.5px 15px;
+            padding: 25px 15px;
+        }
+        
+        @include media-query(500px) {
+            width: calc(100% - 15px);
+            float: none;
+            margin: 0 7.5px 15px;
+            padding: 25px 15px;
+        }
+    }
+}
+
+.viewed_products_section  {
+	.sec-title-link {
+		margin-bottom: 0;
+	}
+}
+
+.hm2-product-section {
+	background: #f9f9f9;
+    padding: 80px 0;
+    margin-top: 80px;
+
+    .tabs_nav {
+    	border-bottom: 0;
+    	padding-bottom: 15px;
+    }
+
+
+	.tabs_nav button {
+	    text-transform: none;
+	    display: block;
+	    color: $heading-color;
+	    background-color: #f4f4f4;
+	    text-transform: none;
+	    font-weight: 600;
+	    border-radius: 50px;
+	    border: 1px solid #e7e7e7;
+	    padding: 11px 20px 8px;
+	    line-height: normal;
+	    font-size: 14px;
+	}
+
+	.tabs_nav button.active {
+		background: $theme-color;
+		border-color: $theme-color;
+		color: #fff;
+	}
+
+	.rating {
+        font-size: 10px;
+        color: #ffc21f;
+        margin-bottom: 14px;
+    }
+
+    .item_title {
+        font-size: 18px;
+        margin: 0.4em 0 0.2em;
+
+        a {
+	        font-size: 18px;
+        	color: $heading-color;
+        	font-weight: 500;
+        }
+    }
+
+    .price {
+        font-weight: 400;
+
+        ins {
+            font-weight: 600;
+            color: $theme-color;
+            text-decoration: none;
+            display: inline-block;
+            padding-right: 15px;
+        }
+
+        del {
+            color: #767373;
+        }
+    }
+
+    .add-cart-area {
+        margin-top: 15px;
+    }
+
+    .item_btns_group .addtocart_btn {
+        border-radius: 50px;
+	    text-transform: none;
+	    font-weight: 600;
+	    line-height: inherit;
+	    padding-top: 13px;
+    }
+
+}
+
+.brand-section-s2 .brand_carousel {
+	background: transparent;
+	padding: 0;
+}

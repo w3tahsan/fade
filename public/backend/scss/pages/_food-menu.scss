@@ -1,0 +1,46 @@
+.diet-search{
+	width:360px;
+	.input-group-append{
+		margin-left:-20px;
+		button{
+			border-top-left-radius: $radius!important;
+			border-bottom-left-radius: $radius!important;
+			font-size: 25px;
+			padding: 0 20px;
+			position: relative;
+			z-index: 3;
+		}
+	}
+	@include respond ('laptop'){
+		width:300px;
+		.input-group-append{
+			button{
+				font-size:18px;
+			}
+		}
+	}
+	@include respond ('phone'){
+		width:100%;
+	}
+}
+.menu-list{
+	@include respond ('tab-port'){
+		&>a>img{
+			float:left;
+		}
+	}
+	@include respond ('phone'){
+		&>a>img{
+			width:80px;
+		}
+	}
+}
+
+.plus-icon{
+	height: 60px;
+    width: 60px;
+    min-width: 60px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+}

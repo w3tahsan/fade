@@ -1,0 +1,44 @@
+/* 3.3 - Breadcrumb Section - start
+================================================== */
+.breadcrumb_section {
+	padding: 28.5px 0;
+	background-color: #f9f9f9;
+}
+
+.breadcrumb_nav {
+
+	li {
+		color: #777777;
+		font-size: 14px;
+		font-weight: 500;
+		position: relative;
+
+		&:not(:last-child) {
+			margin-right: 15px;
+			padding-right: 15px;
+		}
+
+		&:after {
+			top: 0;
+			right: -3px;
+			content: '\f105';
+			position: absolute;
+			font-family: 'Font Awesome 5 Pro';
+		}
+
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+	a {
+		color: #333333;
+		display: block;
+		&:hover {
+			color: $theme-color;
+		}
+	}
+}
+/* 3.3 - Breadcrumb Section - end
+================================================== */

@@ -1,0 +1,47 @@
+/* 3.10 - About Page - start
+================================================== */
+.about_content {
+	padding-right: 40px;
+	p {
+		margin-bottom: 50px;
+	}
+}
+.about_small_title {
+	line-height: 1;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	color: $theme-color;
+}
+.about_title {
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 25px;
+}
+.counter_wrap {
+	margin: -10px;
+	>li {
+		padding: 10px;
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+	span,small {
+		display: block;
+		line-height: 1;
+	}
+	span {
+		font-size: 36px;
+		font-weight: 700;
+		margin-bottom: 14px;
+		color: $default_black;
+	}
+	strong {
+		font-weight: 700;
+	}
+	small {
+		font-size: 14px;
+	}
+}
+/* 3.10 - About Page - end
+================================================== */

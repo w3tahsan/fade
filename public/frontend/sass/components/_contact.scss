@@ -1,0 +1,56 @@
+/* 3.19 - Contact Page - start
+================================================== */
+.map_section {
+	iframe {
+		width: 100%;
+		height: 580px;
+	}
+}
+
+.contact_info_wrap {
+	.contact_title {
+		line-height: 1;
+		font-size: 35px;
+		margin-bottom: 0.7em;
+		span {
+			display: block;
+			font-weight: 400;
+		}
+	}
+	.decoration_image {
+		margin-bottom: 25px;
+	}
+	p {
+		margin-bottom: 2.5em;
+
+		@include widther(1200px) {
+			padding-right: 120px;
+		}
+	}
+	.list_title {
+		line-height: 1;
+		font-size: 18px;
+		margin-bottom: 1em;
+	}
+
+	.ul_li_block > li {
+		color: #727272;
+	}
+
+	.ul_li_block > li + li {
+		margin-top: 8px;
+	}
+
+	.form_item input {
+		height: 55px;
+		padding: 0 20px;
+		border: 1px solid #c5c5c5;
+	}
+
+	.form_item textarea {
+		padding: 20px;
+		border: 1px solid #c5c5c5;
+	}
+}
+/* 3.19 - Contact Page - end
+================================================== */

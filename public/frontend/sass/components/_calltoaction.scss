@@ -1,0 +1,33 @@
+/* 3.24 - Call To Action Section - start
+================================================== */
+.calltoaction_section {
+	@include bg_image_property;
+	.item_image {
+		margin-right: -110px;
+	}
+	.item_content {
+		padding-left: 100px;
+	}
+	h2 {
+		font-size: 16px;
+		margin-bottom: 25px;
+		color: $theme-color;
+	}
+	h3 {
+		line-height: 1;
+		font-size: 36px;
+		font-weight: 700;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+	}
+	.item_price {
+		line-height: 1;
+		margin-bottom: 35px;
+		.sale_price {
+			margin-right: 8px;
+			color: $default_red;
+		}
+	}
+}
+/* 3.24 - Call To Action Section - end
+================================================== */

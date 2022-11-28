@@ -1,0 +1,51 @@
+/*--------------------------------------------------------------
+	#error-404
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#16.1	error-404-section
+--------------------------------------------------------------*/
+.error-404-section {
+	border-top: 1px solid #eaeaea;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+
+	@include media-query(991px) {
+		margin-top: 0;
+		height: calc(100vh - 89px);
+	}
+
+	.error-404-area {
+		max-width: 580px;
+		margin: 0 auto;
+	}
+
+	h2 {
+		font-size: 240px;
+		font-size: calc-rem-value(240);
+		font-weight: 500;
+		line-height: 0.7em;
+		margin: 0 0 0.2em;
+
+		@include media-query(991px) {
+			font-size: 140px;
+			font-size: calc-rem-value(140);
+		}
+
+	}
+
+	h3 {
+		font-size: 26px;
+		font-size: calc-rem-value(26);
+		font-weight: 400;
+		margin: 0 0 1em;
+	}
+
+	p {
+		font-size: 17px;
+		font-size: calc-rem-value(17);
+		margin: 0 0 3em;
+	}
+}

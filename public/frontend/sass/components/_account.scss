@@ -1,0 +1,117 @@
+/* 3.20 - Account Page - start
+================================================== */
+.account_menu {
+	.title_text {
+		line-height: 1;
+		font-size: 22px;
+		margin-bottom: 15px;
+	}
+	.account_menu_list {
+		>li {
+			&:not(:last-child) {
+				margin-bottom: -1px;
+			}
+			&:first-child {
+				>a {
+					border-top-left-radius: 3px;
+					border-top-right-radius: 3px;
+				}
+			}
+			&:last-child {
+				>a {
+					border-bottom-left-radius: 3px;
+					border-bottom-right-radius: 3px;
+				}
+			}
+			>a {
+				color: $text-color;
+				line-height: 1;
+				display: block;
+				padding: 14px 25px;
+				border: 1px solid #eaeaea;
+			}
+			&:hover,
+			&.active {
+				>a {
+					color: #ffffff;
+					border-color: $theme-color;
+					background-color: $theme-color;
+				}
+			}
+		}
+	}
+}
+
+.account_content_area {
+	.content_layout {
+		display: flex;
+		flex-wrap: wrap;
+		border-top: 1px solid #eaeaea;
+		border-left: 1px solid #eaeaea;
+		>li {
+			width: 50%;
+			flex: 0 0 50%;
+			padding: 25px 30px;
+			border-right: 1px solid #eaeaea;
+			border-bottom: 1px solid #eaeaea;
+			&:nth-child(1),
+			&:nth-child(2) {
+				width: 100%;
+				flex: 0 0 100%;
+			}
+		}
+	}
+
+	a {
+		color: #018bc8;
+		&:hover {
+			color: $default_orange;
+		}
+	}
+
+	h3 {
+		line-height: 1;
+		font-size: 30px;
+		margin-bottom: 0.8em;
+	}
+
+	h4 {
+		font-size: 18px;
+		color: $heading-color;
+		font-weight: 500;;
+		font-size: 18px;
+		margin-bottom: 0.5em;
+		strong {
+			font-weight: 500;
+		}
+	}
+
+	p {
+		margin-bottom: 15px;
+	}
+
+	.btn {
+		color: #2975c5;
+		font-size: 14px;
+		font-weight: 500;
+		padding: 10px 20px;
+		border-radius: 3px;
+		background-color: #f8f8f8;
+		text-transform: capitalize;
+		border: 1px solid #f1f1f1;
+
+		&:hover {
+			color: #ffffff;
+			background-color: $theme-color;
+		}
+	}
+
+	.btns_group {
+		margin: -2px;
+		>li {
+			padding: 2px;
+		}
+	}
+}
+/* 3.20 - Account Page - end
+================================================== */

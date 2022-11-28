@@ -1,0 +1,198 @@
+/* 3.5 Slider Section - start
+================================================== */
+
+/* main slider - start */
+.main_slider {
+	position: relative;
+	margin: 32px 0 0 32px;
+
+	@include media-query(991px) {
+		margin: 25px 0 0;
+
+		.slider_content {
+			padding-left: 25px;
+		}
+
+		.slick-dots {
+			left: 50% !important;
+		}
+	}
+
+	.slider_item {
+		display: flex;
+		min-height: 517px;
+		align-items: center;
+		background-color: #fafafa;
+		padding-left: 50px;
+		@include bg_image_property;
+	}
+
+	.slider_image {
+		img {
+			float: right;
+		}
+	}
+
+	.small_title {
+		background: $theme-color2;
+		line-height: 1;
+		font-size: 10px;
+		font-weight: 500;
+		margin-bottom: 10px;
+		color: $default_black;
+		text-transform: uppercase;
+		display: inline-block;
+		padding: 5px 15px 6px;
+		letter-spacing: 4px;
+		border-radius: 50px;
+	}
+
+	.big_title {
+		color: #fff;
+		line-height: 1.2;
+		font-size: 48px;
+		font-weight: 300;
+		margin-bottom: 0.2em;
+
+		span {
+			font-weight: 600;
+			display: block;
+		}
+	}
+
+	p {
+		color: #fff;
+		margin-bottom: 1em;
+		text-transform: uppercase;
+	}
+
+	.item_price {
+		margin-bottom: 25px;
+	}
+
+	.item_price del {
+		color: #fff;
+	}
+
+	.slick-dots {
+		width: auto;
+		left: 50%;
+		bottom: 50px;
+		@include translatingX();
+
+
+
+		li button {
+			background: #f1f1f1;
+			width: 10px;
+			height: 10px;
+			border: 0;
+		}
+
+		li.slick-active button {
+			background: $theme-color;
+			border: 0;
+		}
+
+	}
+}
+
+.item_price {
+	display: flex;
+	line-height: 1;
+	align-items: center;
+	.sale_price {
+		font-size: 24px;
+		font-weight: 500;
+		color: $default_orange;
+	}
+	del {
+		color: #000000;
+		font-size: 14px;
+		font-weight: 500;
+		margin-right: 10px;
+	}
+}
+/* main slider - end */
+
+/* slider 2 - start */
+.slider_2 {
+	.slider_item {
+		overflow: hidden;
+		min-height: 440px;
+		padding: 70px 70px;
+		position: relative;
+		border: 1px solid #d7e1e6;
+		border-left: none;
+		.slider_content {
+			max-width: 300px;
+		}
+		.big_title {
+			font-size: 36px;
+			margin-bottom: 10px;
+		}
+	}
+
+	.slider_image {
+		z-index: -1;
+		right: -155px;
+		bottom: -220px;
+		max-width: 600px;
+		position: absolute;
+	}
+
+	.slick-dots {
+		left: 70px;
+		bottom: 45px;
+	}
+}
+/* slider 2 - end *
+
+/* slider 3 - start */
+.slider_3 {
+	.big_title {
+		font-size: 36px;
+		line-height: 1.2;
+		margin-bottom: 10px;
+	}
+	.slick-dots {
+		left: 0;
+		width: 100%;
+		bottom: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		button {
+			width: 10px;
+			height: 10px;
+		}
+	}
+}
+/* slider 3 - end */
+
+
+.main-slider-s2 {
+	margin: 0;
+	padding: 25px 0;
+	background: #fafafa;
+
+	.slider_item {
+		background: transparent;
+	}
+
+	.big_title {
+		color: $heading-color;
+		font-weight: 600;
+		margin-top: 0.1em;
+	}
+
+	p,
+	.item_price del {
+		color: $text-color;
+	}
+}
+
+
+
+/* 3.5 Slider Section - end
+================================================== */

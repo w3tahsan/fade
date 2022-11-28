@@ -1,0 +1,55 @@
+/* 3.21 - Compare Page - start
+================================================== */
+.compare_table {
+	table {
+		margin-bottom: 0;
+		border: 1px solid #eeeeee;
+		>tbody {
+			vertical-align: middle;
+		}
+	}
+	table>:not(caption)>*>* {
+		padding: 20px;
+		border-color: #eeeeee;
+		border-right: 1px solid #eeeeee;
+	}
+
+	h3, h4, p {
+		margin-bottom: 0;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
+
+	h4 {
+		color: #71737a;
+		font-size: 15px;
+		margin-top: 15px;
+		font-family: 'Lato', sans-serif;
+	}
+
+	p {
+		color: #71737a;
+	}
+
+	.btn {
+		padding: 15px 28px 13px;
+	}
+
+	.remove_btn {
+		font-size: 24px;
+		color: #ababab;
+		&:hover {
+			color: red;
+		}
+	}
+
+	.rating_star {
+		li {
+			color: #ffc21f;
+		}
+	}
+}
+/* 3.21 - Compare Page - start
+================================================== */

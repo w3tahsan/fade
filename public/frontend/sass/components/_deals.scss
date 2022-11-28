@@ -1,0 +1,173 @@
+/* 3.7 - Deal Products - start
+================================================== */
+
+/* deals product layout 1 - start */
+.deals_product_layout1 {
+	padding: 10px;
+	position: relative;
+	text-align: center;
+	border: 1px solid #eeeeee;
+	transition: $default_transition;
+	.bg_area {
+		padding: 120px 55px 350px;
+		background-color: #f8f8f8;
+	}
+	.item_title {
+		font-size: 48px;
+		font-weight: 500;
+		color: #fff;
+		margin-bottom: 13px;
+
+		span {
+			display: block;
+		}
+	}
+
+	p {
+		color: #fff;
+		margin-bottom: 32px;
+	}
+
+	.item_image {
+		margin: 0 auto;
+		max-width: 303px;
+		img {
+			transition: $default_transition;
+		}
+	}
+	&:hover {
+		z-index: 1;
+		border-color: $theme-color;
+		.item_image {
+			img {
+				transform: scale(1.06);
+			}
+		}
+	}
+}
+/* deals product layout 1 - end */
+
+/* deals product layout 2 - start */
+.deals_product_layout2 {
+	padding: 10px;
+	position: relative;
+	text-align: center;
+	border: 1px solid #eeeeee;
+	transition: $default_transition;
+	.global_link {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		opacity: 0;
+		position: absolute;
+		border: 2px solid $theme-color;
+	}
+	&:hover {
+		.global_link {
+			opacity: 1;
+		}
+	}
+
+	.bg_area {
+		position: relative;
+		padding: 60px 30px 38px;
+		background-color: #f8f8f8;
+	}
+
+	.offter_type {
+		top: 15px;
+		left: 30px;
+		z-index: 1;
+		position: absolute;
+		span {
+			display: block;
+			line-height: 1;
+			&:not(:last-child) {
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	.item_badge {
+		top: 15px;
+		right: 22px;
+		z-index: 1;
+		width: 70px;
+		height: 70px;
+		display: flex;
+		padding: 0px 10px;
+		position: absolute;
+		border-radius: 100%;
+		align-items: center;
+		color: $default_black;
+		justify-content: center;
+		background-color: $theme-color;
+		span,
+		strong {
+			display: block;
+			line-height: 1;
+		}
+		strong {
+			font-size: 16px;
+		}
+	}
+
+	.item_image {
+		margin-bottom: 30px;
+	}
+
+	.item_price {
+		margin-bottom: 20px;
+		justify-content: center;
+		span {
+			font-size: 18px;
+			font-weight: 600;
+			margin-right: 10px;
+			color: $default_red;
+		}
+		del {
+			color: #2f3034;
+		}
+	}
+
+	.item_title {
+		line-height: 1;
+		font-size: 48px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+
+	.available_content_wrap {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+		justify-content: space-between;
+	}
+
+	.progress {
+		display: flex;
+		height: 15px;
+		margin-bottom: 30px;
+		border-radius: 45px;
+		background-color: #eeeeee;
+		.progress-bar {
+			width: 25%;
+			border-radius: 45px;
+			background-color: $theme-color;
+		}
+	}
+
+	.countdown_wrap {
+		.title_text {
+			display: block;
+			line-height: 1;
+			margin-bottom: 20px;
+		}
+	}
+}
+/* deals product layout 2 - end */
+
+/* 3.7 - Deal Products - end
+================================================== */

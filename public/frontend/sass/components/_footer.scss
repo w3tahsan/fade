@@ -1,0 +1,143 @@
+/* 3.2 - Footer Section - start
+================================================== */
+.footer_section {
+	color: #636363;
+	padding: 90px 0 0px;
+
+	.brand_logo {
+		margin-bottom: 35px;
+	}
+
+	.footer_bottom {
+		background: #f9f9f9;
+		padding: 20px 0;
+		border-top: 1px solid #f1f1f1;
+	}
+}
+
+.footer_widget_title {
+	color: #000000;
+	line-height: 1;
+	font-size: 18px;
+	margin-bottom: 25px;
+	text-transform: none !important;
+}
+
+.footer_widget_area {
+	padding-bottom: 80px;
+}
+
+.footer_about {
+	padding-right: 35px;
+	p {
+		margin-bottom: 30px;
+	}
+}
+
+.footer_useful_links {
+	li {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+	a {
+		color: #636363;
+		&:hover {
+			color: $theme-color;
+		}
+	}
+}
+
+.footer_contact {
+	p {
+		margin-bottom: 10px;
+	}
+}
+
+.hotline_wrap {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+	justify-content: space-between;
+}
+
+.footer_hotline {
+	display: flex;
+	align-items: center;
+	.item_icon {
+		color: #636363;
+		font-size: 34px;
+		margin-right: 20px;
+	}
+	.item_title {
+		line-height: 1;
+		color: #282828;
+		font-size: 12px;
+		font-weight: 400;
+		margin-bottom: 8px;
+	}
+	.hotline_number {
+		display: block;
+		line-height: 1;
+		font-family: $secondary_font;
+	}
+}
+
+.livechat_btn {
+	.btn {
+		float: right;
+		border-radius: 45px;
+	}
+}
+
+.store_btns_group {
+	margin: -15px;
+	li {
+		width: 50%;
+		padding: 15px;
+	}
+	a {
+		display: block;
+	}
+}
+
+.copyright_text {
+	color: #282828;
+	margin-bottom: 0;
+	a {
+		color: $theme-color;
+		&:hover {
+			color: $default_orange;
+		}
+	}
+}
+
+.payment_method {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	h4 {
+		color: #282828;
+		font-size: 14px;
+		margin-bottom: 0;
+		margin-right: 15px;
+	}
+}
+
+/* footer 2 - start */
+.footer_2 {
+	padding: 0;
+	margin-top: -116px;
+	background-color: #f8f8f8;
+	.footer_widget_area {
+		padding: 180px 0 40px;
+	}
+	.footer_bottom {
+		padding: 35px 0;
+		border-top: 1px solid #cccccc;
+	}
+}
+/* footer 2 - end */
+
+/* 3.2 - Footer Section - end
+================================================== */

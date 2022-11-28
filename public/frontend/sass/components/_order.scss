@@ -1,0 +1,31 @@
+/* 3.18 - Order Page - start
+================================================== */
+.order_tracking_form {
+	.title_text {
+		line-height: 1;
+		font-size: 36px;
+		margin-bottom: 0.7em;
+	}
+	p {
+		max-width: 600px;
+		margin: 0 auto 56px;
+	}
+	.form_title {
+		line-height: 1;
+		font-size: 15px;
+		margin-bottom: 0.8em;
+	}
+	.form_item {
+		margin-bottom: 30px;
+		input {
+			height: 55px;
+			text-align: center;
+			border-radius: 0;
+			border-color: #f7f7f7;
+			background-color: #f7f7f7;
+			border: 1px solid #ededed;
+		}
+	}
+}
+/* 3.18 - Order Page - end
+================================================== */
